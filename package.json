@@ -1,19 +1,18 @@
 {
   "name": "kripta-js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A tiny asymmetric/symmetric encryption lib for humans.",
-  "main": "index.js",
-  "source": "index.js",             
+  "main": "./dist/kripta.cjs",
+  "source": "index.js",
   "exports": {
     "require": "./dist/kripta.cjs",
     "default": "./dist/kripta.modern.js"
   },
-  "main": "./dist/kripta.cjs",
   "module": "./dist/kripta.module.js",
   "unpkg": "./dist/kripta.umd.js",
   "scripts": {
-    "build": "microbundle",         
-    "dev": "microbundle watch",      
+    "build": "microbundle",
+    "dev": "microbundle watch",
     "test": "node kripta.test.js"
   },
   "repository": {
