@@ -1,0 +1,45 @@
+{
+  "name": "kripta-js",
+  "version": "0.1.3",
+  "description": "A tiny asymmetric/symmetric encryption lib for humans.",
+  "main": "index.js",
+  "source": "index.js",             
+  "exports": {
+    "require": "./dist/kripta.cjs",
+    "default": "./dist/kripta.modern.js"
+  },
+  "main": "./dist/kripta.cjs",
+  "module": "./dist/kripta.module.js",
+  "unpkg": "./dist/kripta.umd.js",
+  "scripts": {
+    "build": "microbundle",         
+    "dev": "microbundle watch",      
+    "test": "node kripta.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanix-Darker/kripta-js.git"
+  },
+  "keywords": [
+    "AES",
+    "RSA",
+    "encryption",
+    "decryption"
+  ],
+  "author": "sanix-darker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sanix-Darker/kripta-js/issues"
+  },
+  "homepage": "https://github.com/Sanix-Darker/kripta-js#readme",
+  "type": "module",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "keypair": "^1.0.4",
+    "node-forge": "^1.3.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0"
+  }
+}
