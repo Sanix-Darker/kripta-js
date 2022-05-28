@@ -1,6 +1,6 @@
 {
   "name": "kripta-js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A tiny asymmetric/symmetric encryption lib for humans.",
   "main": "./dist/kripta.cjs",
   "source": "index.js",

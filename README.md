@@ -1,6 +1,6 @@
 # kripta-js
 
-An simple implementation of a Symmetric(AES) and Asymmetric(RSA) encryption.
+An simple implementation of a Symmetric(AES) and Asymmetric(RSA) encryption for humans.
 
 ## Features
 
@@ -40,6 +40,14 @@ npm install kripta-js
         // secret-message 
         ```
 
+    - Some methods and their Inputs/Outputs
+        | function     	| params & types                                 | return type   |
+        | -------	    | -------	                                     | -------	     |
+        | encrypt       | message(Buffer|str), secret_key(str)           | str           |
+        | decrypt       | encrypted_messsage(Buffer|str), secret_key(str)| str           |
+        | encryptFile   | path_of_file(str),  password(str)              | str           |
+        | decryptFile   | path_of_encrypted_file(str), password(str)     | str           |
+
 - To use an **asymmetric encryption** (RSA):
     - Schema :
 
@@ -71,4 +79,10 @@ npm install kripta-js
         console.log(k.decrypt(encrypted_msg).decode())
         // secret-message 
         ```
-
+    - Some methods and their Inputs/Outputs
+        | function     	| params & types                  | return type   |
+        | -------	    | -------	                      | -------	      |
+        | encrypt       | publicKey(str), message(str)    | str           |
+        | setPublicKey  | publicKey(str)                  | str           |
+        | setPrivateKey | privateKey(str)                 | str           |
+        | decrypt       | encrypted_messsage(Buffer|str)  | str           |
